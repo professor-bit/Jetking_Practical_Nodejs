@@ -1,0 +1,38 @@
+﻿5) Write a JavaScript Program for checking whether the property
+whether an object exists or not.
+
+
+Ans.
+
+
+// Define an object
+const myObject = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
+
+// Function to check if a property exists in an object
+function propertyExists(obj, prop) {
+  return obj.hasOwnProperty(prop);
+}
+
+
+// Property to check
+const propertyName = 'age';
+
+
+// Check if the property exists in the object
+if (propertyExists(myObject, propertyName)) {
+  console.log(`The property '${propertyName}' exists in the object.`);
+} else {
+  console.log(`The property '${propertyName}' does not exist in the object.`);
+}
+
+
+In this program: 
+We define an object called myObject with several properties. 
+We define a function called propertyExists that takes an object (obj) and a property name (prop) as arguments. This function uses the hasOwnProperty method of the object to check if the property exists in the object. 
+We specify the property name (propertyName) that we want to check. 
+We call the propertyExists function with the object and property name as arguments, and based on the result, we log whether the property exists or not in the object.

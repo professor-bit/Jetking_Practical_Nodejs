@@ -1,0 +1,27 @@
+﻿1) What can Node.js do?
+
+ANS. Node.js is a powerful runtime environment built on Chrome's V8 JavaScript engine. It enables developers to run JavaScript code on the server-side, providing a wide range of capabilities. Some of the key things Node.js can do include:  
+
+
+Server-side scripting: Node.js is commonly used to create server-side web applications and APIs. It allows developers to handle HTTP requests and responses, making it possible to build web servers using JavaScript. 
+
+
+Scalable network applications: Node.js is well-suited for building real-time applications, such as chat applications, online gaming platforms, and collaborative tools, that require handling a large number of concurrent connections. 
+
+
+Command-line tools: Node.js can be used to create command-line tools and scripts for automating tasks, such as build processes, deployment scripts, and data processing tasks. 
+
+
+Data streaming: Node.js provides built-in support for handling data streams, which allows developers to efficiently process large volumes of data without loading everything into memory at once. This makes it ideal for tasks like file I/O, network communication, and data manipulation. 
+
+
+Microservices: Node.js is often used to build microservices architectures, where applications are broken down into smaller, independent services that communicate with each other over the network. Its lightweight and event-driven architecture make it well-suited for building and deploying microservices. 
+
+
+Package management: Node.js comes with npm (Node Package Manager), which is the largest ecosystem of open source libraries in the world. npm makes it easy to discover, install, and manage dependencies for Node.js projects. 
+
+
+Desktop applications: With frameworks like Electron, Node.js can be used to build cross-platform desktop applications using web technologies like HTML, CSS, and JavaScript. 
+
+
+Overall, Node.js is a versatile and powerful platform that has gained popularity for its ability to build fast, scalable, and efficient applications across a wide range of domains.

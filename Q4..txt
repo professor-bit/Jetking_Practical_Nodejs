@@ -1,0 +1,48 @@
+﻿4) Write a JavaScript Program for removing duplicates from an
+array of numbers and strings. 
+
+
+Ans.
+
+function removeDuplicates(array) {
+  // Create an empty object to store unique elements
+  const uniqueElements = {};
+
+
+  // Iterate over the array
+  array.forEach(item => {
+    // Use the item as a key in the object
+    uniqueElements[item] = true;
+  });
+
+
+  // Extract unique elements from the object keys
+  const uniqueArray = Object.keys(uniqueElements);
+
+
+  // Convert uniqueArray back to array of numbers and strings
+  return uniqueArray.map(item => {
+    // Convert the key back to its original data type (number or string)
+    if (!isNaN(parseFloat(item)) && isFinite(item)) {
+      // Convert to number if possible
+      return parseFloat(item);
+    } else {
+      // Otherwise, keep it as string
+      return item;
+    }
+  });
+}
+
+
+// Test the function with an array of numbers and strings
+const mixedArray = [1, 2, 3, 4, 2, 3, 'apple', 'orange', 'apple', 'banana'];
+const uniqueArray = removeDuplicates(mixedArray);
+console.log(uniqueArray);
+
+
+In this program: 
+We define a function called removeDuplicates that takes an array (array) as input.
+Inside the function, we create an empty object (uniqueElements) to store unique elements. 
+We iterate over the input array using forEach and use each array element as a key in the uniqueElements object. JavaScript objects cannot have duplicate keys, so this automatically removes duplicates. 
+We then extract the unique elements from the object keys using Object.keys. 
+Finally, we convert the resulting array of unique keys back to the original data types (numbers or strings) and return the modified array.
